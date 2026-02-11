@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Payments | Waterman Lockbox Storage</title>
+  <meta name="description" content="Payment options for Waterman Lockbox Storage: pay by mail or online." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Source+Sans+3:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -33,13 +37,23 @@
 <main>
   <section class="section">
     <div class="container">
-      <h1>Payments</h1>
-      <p class="alert-text">
-        Rent is due on the 1st of each month. We do not send out bills.
-      </p>
+      <div class="page-banner">
+        <div>
+          <span class="kicker">Payment Information</span>
+          <h1 style="margin-top:10px;">Payments</h1>
+          <p class="alert-text" style="margin-top:10px;">
+            Rent is due on the 1st of each month. We do not send out bills.
+          </p>
+        </div>
+        <div class="inline-actions">
+          <a class="btn" target="_blank" rel="noopener"
+             href="https://www.aps123.net/cgi-bin/customer_enter_pac.pl?pac=lockbox">
+            Pay Online
+          </a>
+        </div>
+      </div>
 
       <div class="grid-2" style="margin-top:16px;">
-        <!-- Mail payment -->
         <div class="card">
           <h3>Pay by mail</h3>
           <p class="muted" style="margin-top:6px;">Send your payment to:</p>
@@ -51,7 +65,7 @@
           </div>
 
           <p class="muted" style="margin-top:12px;">
-            Please include your unit number(s) and which site (Waterman / Hinckley) on your check.
+            Please include your unit number(s) and which site (Waterman or Hinckley) on your check.
           </p>
 
           <p style="margin-top:14px;">
@@ -59,7 +73,6 @@
           </p>
         </div>
 
-        <!-- Online payment -->
         <div class="card">
           <h3>Pay online</h3>
           <p class="muted" style="margin-top:6px;">
@@ -71,7 +84,7 @@
             <li>Payment authorization code: <strong>LockBox</strong></li>
           </ul>
 
-          <div style="margin-top:14px;">
+          <div class="cta-row" style="margin-top:14px;">
             <a class="btn" target="_blank" rel="noopener"
                href="https://www.aps123.net/cgi-bin/customer_enter_pac.pl?pac=lockbox">
               Lock Box Online Payment
@@ -89,7 +102,14 @@
 
 <footer class="site-footer">
   <div class="container footer-inner">
-    <div>© 2026 Waterman Lockbox Storage</div>
+    <div>&copy; 2026 Waterman Lockbox Storage</div>
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Unit Sizes</a>
+        <a class="active" href="payments.html">Payments</a>
+        <a href="contact.html">Contact</a>
+    </div>
   </div>
 </footer>
 
