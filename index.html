@@ -14,12 +14,14 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <div class="brand">
+      <a class="brand" href="index.html" aria-label="Waterman Lockbox Storage Home">
         <div class="brand-name">Waterman Lockbox Storage</div>
         <div class="brand-tag">Secure, dry storage with 24-hour access</div>
-      </div>
+      </a>
 
-      <nav class="nav">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+
+      <nav class="nav" id="site-nav">
         <a class="active" href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="services.html">Unit Sizes</a>
@@ -75,7 +77,7 @@
             <li>Quick support at <a href="tel:18152648899">(815) 264-8899</a></li>
           </ul>
 
-          <div class="cta-row" style="margin-top:14px;">
+          <div class="cta-row mt-14">
             <a class="btn btn-ghost" href="contact.html">Talk to an Owner</a>
           </div>
         </aside>
@@ -86,7 +88,7 @@
       <div class="container">
         <h2>Why customers choose Waterman Lockbox</h2>
         <p class="section-lead">Storage should be simple: clean units, dependable access, and clear communication.</p>
-        <div class="grid-3" style="margin-top:14px;">
+        <div class="grid-3 mt-14">
           <article class="card feature-card">
             <h3>Built for Protection</h3>
             <p>Well-maintained storage spaces designed to keep your belongings clean and dry.</p>
@@ -106,7 +108,7 @@
     <section class="section">
       <div class="container">
         <h2>How renting works</h2>
-        <div class="process-grid" style="margin-top:14px;">
+        <div class="process-grid mt-14">
           <article class="step">
             <span class="step-num">1</span>
             <h3>Call for current availability</h3>
@@ -129,16 +131,16 @@
     <section class="section">
       <div class="container">
         <h2>Locations</h2>
-        <div class="grid-2" style="margin-top:14px;">
+        <div class="grid-2 mt-14">
           <article class="card">
             <h3>Waterman</h3>
             <p>Rte 30 and Rte 23 (1/8 mile west on 30)</p>
-            <p style="margin-top: 10px;"><a class="link" href="contact.html">View map and directions</a></p>
+            <p class="mt-10"><a class="link" href="contact.html">View map and directions</a></p>
           </article>
           <article class="card">
             <h3>Hinckley</h3>
             <p>800 Lincoln Hwy, Hinckley, IL</p>
-            <p style="margin-top: 10px;"><a class="link" href="contact.html">View map and directions</a></p>
+            <p class="mt-10"><a class="link" href="contact.html">View map and directions</a></p>
           </article>
         </div>
       </div>
@@ -147,22 +149,30 @@
     <section class="section">
       <div class="container">
         <h2>Frequently asked questions</h2>
-        <div class="faq-list" style="margin-top:14px;">
+        <div class="faq-list faq-accordion mt-14">
           <article class="faq-item">
-            <h3>What unit sizes do you offer?</h3>
-            <p>We offer multiple sizes from compact to extra-large. Visit Unit Sizes for current options.</p>
+            <button class="faq-question" type="button" aria-expanded="false">What unit sizes do you offer?</button>
+            <div class="faq-answer">
+              <p>We offer multiple sizes from compact to extra-large. Visit Unit Sizes for current options.</p>
+            </div>
           </article>
           <article class="faq-item">
-            <h3>Do I have to wait for office hours?</h3>
-            <p>No. Tenants have 24-hour access, so you can get to your unit when needed.</p>
+            <button class="faq-question" type="button" aria-expanded="false">Do I have to wait for office hours?</button>
+            <div class="faq-answer">
+              <p>No. Tenants have 24-hour access, so you can get to your unit when needed.</p>
+            </div>
           </article>
           <article class="faq-item">
-            <h3>How do I pay rent?</h3>
-            <p>You can pay by mail or online. Full payment instructions are listed on the Payments page.</p>
+            <button class="faq-question" type="button" aria-expanded="false">How do I pay rent?</button>
+            <div class="faq-answer">
+              <p>You can pay by mail or online. Full payment instructions are listed on the Payments page.</p>
+            </div>
           </article>
           <article class="faq-item">
-            <h3>How do I reserve a unit?</h3>
-            <p>Call <a href="tel:18152648899">(815) 264-8899</a> to check live availability and reserve the best fit.</p>
+            <button class="faq-question" type="button" aria-expanded="false">How do I reserve a unit?</button>
+            <div class="faq-answer">
+              <p>Call <a href="tel:18152648899">(815) 264-8899</a> to check live availability and reserve the best fit.</p>
+            </div>
           </article>
         </div>
       </div>
@@ -197,5 +207,9 @@
     </div>
   </footer>
 
+    <script src="js/app.js"></script>
+
 </body>
 </html>
+
+

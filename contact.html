@@ -14,12 +14,14 @@
 
 <header class="site-header">
   <div class="container header-inner">
-    <div class="brand">
+    <a class="brand" href="index.html" aria-label="Waterman Lockbox Storage Home">
       <div class="brand-name">Waterman Lockbox Storage</div>
       <div class="brand-tag">Secure, dry storage with 24-hour access</div>
-    </div>
+    </a>
 
-    <nav class="nav">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+
+    <nav class="nav" id="site-nav">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Unit Sizes</a>
@@ -40,19 +42,19 @@
       <div class="page-banner">
         <div>
           <span class="kicker">Call for Availability</span>
-          <h1 style="margin-top:10px;">Contact Waterman Lockbox Storage</h1>
+          <h1 class="mt-10">Contact Waterman Lockbox Storage</h1>
           <p>Call for live availability, size recommendations, move-in timing, and payment support.</p>
         </div>
       </div>
 
-      <div class="card" style="margin-top:14px;">
+      <div class="card mt-14">
         <h3>Fastest way to reserve a unit</h3>
-        <p style="margin-top: 8px;">
+        <p class="mt-8">
           <a class="phone-big" href="tel:18152648899">(815) 264-8899</a>
         </p>
-        <p class="muted" style="margin-top: 10px;">We are available 24 hours for storage support.</p>
+        <p class="muted mt-10">We are available 24 hours for storage support.</p>
 
-        <div class="cta-row" style="margin-top:14px;">
+        <div class="cta-row mt-14">
           <a class="btn" href="tel:18152648899">Call Now</a>
           <a class="btn btn-secondary" href="services.html">Review Unit Sizes</a>
         </div>
@@ -64,7 +66,7 @@
     <div class="container">
       <h2>Locations</h2>
 
-      <div class="grid-2" style="margin-top:14px;">
+      <div class="grid-2 mt-14">
         <article class="card">
           <h3>Waterman</h3>
           <p>Rte 30 and Rte 23 (1/8 mile west on 30)</p>
@@ -78,7 +80,7 @@
             </iframe>
           </div>
 
-          <p style="margin-top: 10px;">
+          <p class="mt-10">
             <a class="link" target="_blank" rel="noopener"
                href="https://www.google.com/maps?q=9777%20US-30%2C%20Waterman%2C%20IL%2060556&z=17">
               Open in Google Maps
@@ -99,7 +101,7 @@
             </iframe>
           </div>
 
-          <p style="margin-top: 10px;">
+          <p class="mt-10">
             <a class="link" target="_blank" rel="noopener"
                href="https://www.google.com/maps?q=800%20Lincoln%20Hwy%2C%20Hinckley%2C%20IL">
               Open in Google Maps
@@ -115,14 +117,18 @@
   <div class="container footer-inner">
     <div>&copy; 2026 Waterman Lockbox Storage</div>
     <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Unit Sizes</a>
-        <a href="payments.html">Payments</a>
-        <a class="active" href="contact.html">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Unit Sizes</a>
+      <a href="payments.html">Payments</a>
+      <a class="active" href="contact.html">Contact</a>
     </div>
   </div>
 </footer>
 
+  <script src="js/app.js"></script>
+
 </body>
 </html>
+
+

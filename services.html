@@ -14,12 +14,14 @@
 
 <header class="site-header">
   <div class="container header-inner">
-    <div class="brand">
+    <a class="brand" href="index.html" aria-label="Waterman Lockbox Storage Home">
       <div class="brand-name">Waterman Lockbox Storage</div>
       <div class="brand-tag">Secure, dry storage with 24-hour access</div>
-    </div>
+    </a>
 
-    <nav class="nav">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+
+    <nav class="nav" id="site-nav">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a class="active" href="services.html">Unit Sizes</a>
@@ -40,7 +42,7 @@
       <div class="page-banner">
         <div>
           <span class="kicker">Unit Sizes + Pricing</span>
-          <h1 style="margin-top:10px;">Storage Units and Pricing</h1>
+          <h1 class="mt-10">Storage Units and Pricing</h1>
           <p>Long-term and short-term storage available with clean, dry units and 24-hour access.</p>
         </div>
         <div class="inline-actions">
@@ -97,7 +99,7 @@
             </tbody>
           </table>
 
-          <div class="cta-row" style="margin-top:14px;">
+          <div class="cta-row mt-14">
             <a class="btn" href="contact.html">Reserve a Unit</a>
             <a class="btn btn-secondary" href="tel:18152648899">Call for Help Choosing</a>
           </div>
@@ -105,7 +107,7 @@
 
         <div class="card media-card">
           <img src="images/unit.png" alt="Storage unit interior" />
-          <p class="muted" style="margin-top:10px;">
+          <p class="muted mt-10">
             Need help choosing a size? Call <a href="tel:18152648899">(815) 264-8899</a> and we can recommend the best fit.
           </p>
         </div>
@@ -116,7 +118,7 @@
   <section class="section">
     <div class="container">
       <h2>Other products</h2>
-      <div class="grid-2" style="margin-top:14px;">
+      <div class="grid-2 mt-14">
         <div class="card product-card">
           <div class="product-media">
             <img src="images/wood.png" alt="Firewood for sale" />
@@ -124,7 +126,7 @@
           <div class="product-content">
             <h3>Firewood</h3>
             <p>Firewood available for sale year-round.</p>
-            <p class="muted" style="margin-top:4px;">Call for current pricing and availability.</p>
+            <p class="muted mt-4">Call for current pricing and availability.</p>
           </div>
         </div>
 
@@ -135,12 +137,12 @@
           <div class="product-content">
             <h3>Sweet Corn and Produce</h3>
             <p>Fresh sweet corn and produce available seasonally.</p>
-            <p class="muted" style="margin-top:4px;">Available July and August.</p>
+            <p class="muted mt-4">Available July and August.</p>
           </div>
         </div>
       </div>
 
-      <p class="muted" style="margin-top:16px;">
+      <p class="muted mt-16">
         Questions? Call <a href="tel:18152648899">(815) 264-8899</a>.
       </p>
     </div>
@@ -151,14 +153,18 @@
   <div class="container footer-inner">
     <div>&copy; 2026 Waterman Lockbox Storage</div>
     <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a class="active" href="services.html">Unit Sizes</a>
-        <a href="payments.html">Payments</a>
-        <a href="contact.html">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a class="active" href="services.html">Unit Sizes</a>
+      <a href="payments.html">Payments</a>
+      <a href="contact.html">Contact</a>
     </div>
   </div>
 </footer>
 
+  <script src="js/app.js"></script>
+
 </body>
 </html>
+
+

@@ -14,12 +14,14 @@
 
 <header class="site-header">
   <div class="container header-inner">
-    <div class="brand">
+    <a class="brand" href="index.html" aria-label="Waterman Lockbox Storage Home">
       <div class="brand-name">Waterman Lockbox Storage</div>
       <div class="brand-tag">Secure, dry storage with 24-hour access</div>
-    </div>
+    </a>
 
-    <nav class="nav">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+
+    <nav class="nav" id="site-nav">
       <a href="index.html">Home</a>
       <a class="active" href="about.html">About</a>
       <a href="services.html">Unit Sizes</a>
@@ -40,7 +42,7 @@
       <div class="page-banner">
         <div>
           <span class="kicker">Local Owner Operated</span>
-          <h1 style="margin-top:10px;">About Waterman Lockbox Storage</h1>
+          <h1 class="mt-10">About Waterman Lockbox Storage</h1>
           <p>
             We provide secure, dry storage units with 24-hour access for residents and businesses
             in Waterman, Hinckley, and surrounding communities.
@@ -68,27 +70,27 @@
 
         <div class="card">
           <h3>Our locations</h3>
-          <p style="margin-top:8px;"><strong>Waterman:</strong> 9777 US-30, Waterman, IL 60556</p>
-          <p style="margin-top:4px;"><strong>Hinckley:</strong> 800 Lincoln Hwy, Hinckley, IL</p>
-          <p style="margin-top:12px;"><a class="link" href="contact.html">Get directions and map links</a></p>
+          <p class="mt-8"><strong>Waterman:</strong> 9777 US-30, Waterman, IL 60556</p>
+          <p class="mt-4"><strong>Hinckley:</strong> 800 Lincoln Hwy, Hinckley, IL</p>
+          <p class="mt-12"><a class="link" href="contact.html">Get directions and map links</a></p>
         </div>
       </div>
 
-      <div class="card" style="margin-top:14px;">
+      <div class="card mt-14">
         <h3>Customer feedback</h3>
-        <p class="muted" style="margin-top:8px;">
+        <p class="muted mt-8">
           You can view customer feedback on our Better Business Bureau profile.
         </p>
-        <div class="cta-row" style="margin-top:14px;">
+        <div class="cta-row mt-14">
           <a class="btn" target="_blank" rel="noopener"
              href="https://www.bbb.org/us/il/hinckley/profile/storage-units/waterman-hinckley-lockbox-storage-0654-1000044612/customer-reviews">
             View BBB Customer Reviews
           </a>
         </div>
-        <p class="muted" style="margin-top:10px;">This link opens the BBB website in a new tab.</p>
+        <p class="muted mt-10">This link opens the BBB website in a new tab.</p>
       </div>
 
-      <div class="cta-banner" style="margin-top:14px;">
+      <div class="cta-banner mt-14">
         <div>
           <h2>Need a unit soon?</h2>
           <p>The fastest way to check open units is to call.</p>
@@ -106,14 +108,18 @@
   <div class="container footer-inner">
     <div>&copy; 2026 Waterman Lockbox Storage</div>
     <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a class="active" href="about.html">About</a>
-        <a href="services.html">Unit Sizes</a>
-        <a href="payments.html">Payments</a>
-        <a href="contact.html">Contact</a>
+      <a href="index.html">Home</a>
+      <a class="active" href="about.html">About</a>
+      <a href="services.html">Unit Sizes</a>
+      <a href="payments.html">Payments</a>
+      <a href="contact.html">Contact</a>
     </div>
   </div>
 </footer>
 
+  <script src="js/app.js"></script>
+
 </body>
 </html>
+
+
